@@ -13,10 +13,10 @@
   });
   tour.addStep({
       id: "tour_0",
-      title: "One: Start",
-      text: "Hi, This is the initial step configured",
+      title: "Button",
+      text: "This is the button for Exploration",
       classes: "example-step-extra-class",
-    attachTo: {element: "#root", on: "bottom"},
+    attachTo: {element: "#section-home-landing > div > button", on: "top"},
       buttons: [
         {
           text: 'Back',
@@ -30,27 +30,10 @@
     })
 tour.addStep({
       id: "tour_1",
-      title: "Two: Sidebar",
-      text: "This is a sidebar for the functionality. All important links can be found here",
+      title: "Home button",
+      text: "This is the home button",
       classes: "example-step-extra-class",
-    attachTo: {element: "#sidebar", on: "right"},
-      buttons: [
-        {
-          text: 'Back',
-          action: tour.back
-        },
-        {
-          text: 'Next',
-          action: tour.next
-        }
-      ]
-    })
-tour.addStep({
-      id: "tour_2",
-      title: "Whatever",
-      text: "This is a centered modal",
-      classes: "example-step-extra-class",
-    
+    attachTo: {element: "#home", on: "right"},
       buttons: [
         {
           text: 'Back',
