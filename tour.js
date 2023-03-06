@@ -5,7 +5,7 @@
       useModalOverlay: true,
       defaultStepOptions: {
           classes: 'shadow-md bg-purple-dark',
-          scrollTo: true,
+          scrollTo: false,
           cancelIcon: {
               enabled: true
           }
@@ -13,10 +13,10 @@
   });
   tour.addStep({
       id: "tour_0",
-      title: "Button",
-      text: "This is the button for Exploration",
+      title: "Welcome",
+      text: "Welcome to ICICI Bank. Your personal banking experience. ",
       classes: "example-step-extra-class",
-    attachTo: {element: "#section-home-landing > div > button", on: "top"},
+    
       buttons: [
         {
           text: 'Back',
@@ -30,10 +30,10 @@
     })
 tour.addStep({
       id: "tour_1",
-      title: "Home button",
-      text: "This is the home button",
+      title: "Your profile",
+      text: "Click here to view account-related information here,",
       classes: "example-step-extra-class",
-    attachTo: {element: "#home", on: "right"},
+    attachTo: {element: "#global > div.bs-header > div > div > div.rhs.nav-ele > div.mod-profile", on: "bottom"},
       buttons: [
         {
           text: 'Back',
@@ -47,10 +47,27 @@ tour.addStep({
     })
 tour.addStep({
       id: "tour_2",
-      title: "Welcome: First page",
-      text: "This is the first page of the user journey",
+      title: "Hide your balance",
+      text: "If you want to hide/show your balances on this dashboard, use this toggle.",
       classes: "example-step-extra-class",
-    attachTo: {element: "#cart", on: "top"},
+    attachTo: {element: "#RetailUserDashboard_DASHRVNB__1\:WidgetForm\. > div.d-flex.space-between > div > div", on: "bottom"},
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    })
+tour.addStep({
+      id: "tour_3",
+      title: "Financial journey",
+      text: "View your financial journey here. Click on this modal to view. ",
+      classes: "example-step-extra-class",
+    attachTo: {element: "#NewDashboardGroupletPanel\.Rowset1 > div > a", on: "right"},
       buttons: [
         {
           text: 'Back',
