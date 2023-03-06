@@ -50,7 +50,7 @@ tour.addStep({
       title: "Whatever",
       text: "This is a centered modal",
       classes: "example-step-extra-class",
-    null
+    
       buttons: [
         {
           text: 'Back',
