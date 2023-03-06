@@ -13,8 +13,8 @@
   });
   tour.addStep({
       id: "tour_0",
-      title: "Welcome message",
-      text: "This is a welcome message for the website",
+      title: "One: Start",
+      text: "Hi, This is the initial step configured",
       classes: "example-step-extra-class",
       attachTo: {
         element: "#root",
@@ -33,8 +33,8 @@
     })
 tour.addStep({
       id: "tour_1",
-      title: "Sidebar",
-      text: "This is the sidebar of the website",
+      title: "Two: Sidebar",
+      text: "This is a sidebar for the functionality. All important links can be found here",
       classes: "example-step-extra-class",
       attachTo: {
         element: "#sidebar",
