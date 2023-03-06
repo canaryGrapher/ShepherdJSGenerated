@@ -16,10 +16,7 @@
       title: "One: Start",
       text: "Hi, This is the initial step configured",
       classes: "example-step-extra-class",
-      attachTo: {
-        element: "#root",
-        on: "bottom"
-      },
+    attachTo: {element: "#root", on: "bottom"},
       buttons: [
         {
           text: 'Back',
@@ -36,10 +33,24 @@ tour.addStep({
       title: "Two: Sidebar",
       text: "This is a sidebar for the functionality. All important links can be found here",
       classes: "example-step-extra-class",
-      attachTo: {
-        element: "#sidebar",
-        on: "right"
-      },
+    attachTo: {element: "#sidebar", on: "right"},
+      buttons: [
+        {
+          text: 'Back',
+          action: tour.back
+        },
+        {
+          text: 'Next',
+          action: tour.next
+        }
+      ]
+    })
+tour.addStep({
+      id: "tour_2",
+      title: "Whatever",
+      text: "This is a centered modal",
+      classes: "example-step-extra-class",
+    null
       buttons: [
         {
           text: 'Back',
