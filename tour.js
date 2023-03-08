@@ -1,11 +1,10 @@
-
-  alert("ShepherdJS configuration detected. Please wait while the tour is being generated...");
+  console.log("ShepherdJS configuration detected. Please wait while the tour is being generated...");
   var Shepherd = window.Shepherd;
   var tour = new Shepherd.Tour({
       useModalOverlay: true,
       defaultStepOptions: {
           classes: 'shadow-md bg-purple-dark',
-          scrollTo: false,
+          scrollTo: true,
           cancelIcon: {
               enabled: true
           }
@@ -18,10 +17,6 @@
       classes: "example-step-extra-class",
     
       buttons: [
-        {
-          text: 'Back',
-          action: tour.back
-        },
         {
           text: 'Next',
           action: tour.next
@@ -74,8 +69,8 @@ tour.addStep({
           action: tour.back
         },
         {
-          text: 'Next',
-          action: tour.next
+          text: 'Complete',
+          action: tour.complete
         }
       ]
     })
