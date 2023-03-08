@@ -50,7 +50,7 @@ tour.addStep({
       title: "Hide your balance",
       text: "If you want to hide/show your balances on this dashboard, use this toggle.",
       classes: "example-step-extra-class",
-    attachTo: {element: "#RetailUserDashboard_DASHRVNB__1\:WidgetForm\. > div.d-flex.space-between > div > div", on: "bottom"},
+    attachTo: {element: "#RetailUserDashboard_DASHRVNB__1\\:WidgetForm\\. > div.d-flex.space-between > div > div", on: "bottom"},
       buttons: [
         {
           text: 'Back',
@@ -67,7 +67,7 @@ tour.addStep({
       title: "Financial journey",
       text: "View your financial journey here. Click on this modal to view. ",
       classes: "example-step-extra-class",
-    attachTo: {element: "#NewDashboardGroupletPanel\.Rowset1 > div > a", on: "right"},
+    attachTo: {element: "#NewDashboardGroupletPanel\\.Rowset1 > div > a", on: "right"},
       buttons: [
         {
           text: 'Back',
