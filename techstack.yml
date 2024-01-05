@@ -1,7 +1,8 @@
 repo_name: canaryGrapher/ShepherdJSGenerated
 report_id: ed6107d2484c649e368f7b3713072979
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T05:44:08+00:00'
+timestamp: '2024-01-05T09:00:07+00:00'
 requested_by: canaryGrapher
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/canaryGrapher/ShepherdJSGenerated
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -25,4 +27,5 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/canaryGrapher/ShepherdJSGenerated
   detection_source: Repo Metadata
